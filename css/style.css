@@ -98,7 +98,6 @@ main {
 .introduccion {
     display: grid;
     justify-items: center;
-   padding: 30px;
     border: 4px solid #A7E0DB;
     width: 70%;
     margin: 20px auto;
@@ -110,11 +109,13 @@ main {
     font-size: 45px;
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
+    text-align: center;
 }
 .introduccion h4 {
     font-size: 30px;
     font-family: Arial, sans-serif;
     margin-bottom: 30px;
+    text-align: center;
 }
 .introduccion button {
     font-size: 25px;
