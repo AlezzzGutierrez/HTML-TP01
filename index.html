@@ -5,42 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer sitio web</title>
 
-    <link rel="icon" type="image/png" href="Images/autismo.jpg"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="Images/logo1.jpg"/>
   </head>
 
   <body>
+
     <header class="site-header">
-        <h1>Mi Primer Sitio - [Gianella Gutierrez]</h1>
+        <div class="header-izquierda">
+
+         <h1>Mi Primer Sitio - Gianella Gutierrez</h1>
+
+    </div>
+
+        <div class="header-derecha">
         <img 
         width="100"
         height="100"
         title="logo" 
-        src="Images/logo.jpg">
-    </header>
+        src="Images/logo1.jpg">
+        </div>
 
-    <nav class="main-nav">
+   
+<nav class="main-nav">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#" class="link">HOME</a>
                 </li>
                 <li>
-                    <a href="#">Proyectos</a>
+                    <a href="#" class="link">PROYECTOS</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
-
+                    <a href="#" class="link">CONTACTO</a>
                 </li>
             </ul>
         </nav>
-    <section>
+         </header>
+    <main>
+    <section class="introduccion">
 
         <h2>Hola, soy estudiante de Fundamentos de Programacion Web</h2>
         <h4>Aprendiendo HTML y CSS desde cero, paso a paso</h4>
-        <button name="button">Empezar</button>
+        <button name="button" class="link">Empezar</button>
 
     </section> 
 
-    <section>
+    <section class="mis-hobbies">
 
     <h2>Mis Hobbies</h2>
 
@@ -50,7 +61,7 @@
             <img 
             width="100"
         height="100" 
-            src="Images/dibujar.jpg" alt="Dibujar">
+            src="Images/dibujar.png" alt="Dibujar">
             <p>Dibujar</p>
         </div>
 
@@ -58,7 +69,7 @@
             <img 
             width="100"
         height="100" 
-            src="Images/artesanias.jpeg" alt="Artesanias">
+            src="Images/artesanias.png" alt="Artesanias">
             <p>Hacer Artesanias</p>
         </div>
 
@@ -66,16 +77,16 @@
             <img 
             width="100"
         height="100"
-            src="Images/videojuegos.jpg" alt="Jugar Videojuegos">
+            src="Images/juegos.png" alt="Jugar Videojuegos">
             <p>Jugar Videojuegos</p>
         </div>
     </div> </section>
 
-    <section>
+    <section class="sobre-mi">
 
     <h2>Sobre mí</h2>
 
-    <div class="sobre-mi">
+    <div class="yo">
 
         <div>
             <img 
@@ -86,21 +97,33 @@
             >
         </div>
 
-        <div>
-            <p>
-                Gianella tiene 22 años y es estudiante de la Facultad de Ingeniería de Jujuy,
-                donde actualmente cursa la Tecnicatura Universitaria en Diseño Integral de
-                Videojuegos. Se graduó de la Escuela Normal Juan Ignacio Gorriti y actualmente
-                se encuentra formándose en el área del diseño y desarrollo de videojuegos,
-                con especial interés en los aspectos creativos y artísticos de esta disciplina.
-            </p>
-        </div>
+    <div class="texto">
+    <p>
+        Gianella tiene 22 años y es estudiante de la Facultad de Ingeniería de Jujuy,
+        donde actualmente cursa la Tecnicatura Universitaria en Diseño Integral de
+        Videojuegos. Se graduó de la Escuela Normal Juan Ignacio Gorriti y actualmente
+        se encuentra formándose en el área del diseño y desarrollo de videojuegos.
+        Su objetivo profesional es continuar desarrollándose como artista digital
+        especializada en la creación de entornos, escenarios y concept art de personajes
+        para videojuegos y otros proyectos audiovisuales.
+    </p>
+<p>
+    Su interés principal se encuentra en el área artística y creativa, especialmente
+    en el diseño de mundos, personajes y ambientes que ayuden a construir la identidad
+    visual de un proyecto. A futuro,
+    aspira a trabajar profesionalmente como artista digital y participar en proyectos
+    donde pueda aportar ideas, diseños y propuestas visuales originales.
+</p>
+
+
+</div>
+
 
     </div>
 
 </section>
 
-<section>
+<section class="contacto">
 
     <h2>Contacto</h2>
     <form>
@@ -115,6 +138,8 @@
 
 </section>
 
+</main>
+
 <footer>
 
     <div>
@@ -122,12 +147,12 @@
     </div>
 
     <div>
-        <a href="#">Email</a>
-        <a href="#">Facebook</a>
-        <a href="#">GitHub</a>
+        <a href="mailto:gianellaagutierrez28@gmail.com" class="link">Email</a>
+        <a href="#" class="link">Facebook</a>
+        <a href="#" class="link">GitHub</a>
     </div>
 
 </footer>
-    
+   
   </body>
   </html>

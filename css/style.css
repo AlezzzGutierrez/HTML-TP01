@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+
+    grid-template-rows: auto auto 150px;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+
+.site-header {
+    grid-area: header;
+    background-color:#5FB0C9;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+   
+  
+}
+
+.header-izquierda {
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    align-items: center;
+    
+    padding-left: 45px;
+}
+.header-izquierda h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    
+}
+
+.header-derecha {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}
+.header-derecha img {
+    width: 125px;
+    height: auto;
+}
+
+.main-nav {
+    grid-column: 1 / 3;
+    grid-row: 2;
+
+    background-color:#ffffff;
+    justify-self: stretch;
+    
+
+    padding: 15px 30px;
+  
+    
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    
+    
+}
+.main-nav a:hover {
+    color: #5FB0C9;
+}
+
+main {
+    grid-area: main;
+   
+}
+
+.introduccion {
+    display: grid;
+    justify-items: center;
+   padding: 30px;
+    border: 4px solid #A7E0DB;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 80px;
+
+}
+.introduccion h2 {
+    font-size: 45px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.introduccion h4 {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+}
+.introduccion button {
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #5FB0C9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.introduccion button:hover {
+    background-color: #050505;
+}
+.mis-hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(167, 224, 219, 0.2);
+    border-radius: 20px;
+}
+.mis-hobbies h2 {
+    font-size: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hobbies {
+    display: flex;
+    gap: 20px;
+}
+
+.hobby {
+    text-align: center;
+}
+.hobby img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.mis-hobbies p {
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 80px auto;
+
+}
+.sobre-mi h2 {
+    font-size: 40px;
+}
+.yo {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    align-items: center;
+    gap: 15px;
+    max-width: 2000px;
+}
+
+.texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+.texto p {
+    font-size: 25px;
+    margin: 0;
+   
+}
+.yo > div:first-child {
+    display: flex;
+    justify-content: center;
+}
+.yo img {
+    height: 400px;
+    width: auto;
+    border-radius: 50%;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+
+    background-color: rgba(167, 224, 219, 0.6);
+    border-radius: 20px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contacto input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contacto button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer { 
+    grid-area: footer; 
+    font-family: Arial, sans-serif; 
+ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+ 
+    background-color: #5FB0C9; 
+    padding: 20px; 
+}
+
+footer > div:first-child {
+    justify-self: start;
+}
+
+footer > div:last-child {
+    justify-self: end;
+    display: flex;
+    gap: 40px;
+}
+
+footer a { 
+    font-size: 30px; 
+    color: white; 
+    text-decoration: none; 
+} 
+ 
+footer p { 
+    font-size: 20px; 
+    color: white; 
+    margin: 0;
+} 
+
+footer a:hover { 
+    color: black; 
+}
